@@ -20,8 +20,8 @@ body::before {
   z-index: 9999;
 
   background-image:
-    radial-gradient(circle, rgba(255, 244, 160, 0.9) 1px, transparent 1.4px),
-    radial-gradient(circle, rgba(190, 245, 140, 0.9) 1px, transparent 1.4px);
+    radial-gradient(circle, rgba(0, 0, 0, 0.45) 1px, transparent 1.4px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.45) 1px, transparent 1.4px);
   background-position: 0 0, 4px 5px;
   background-size: 6px 6px, 8px 8px;
   animation: grainDrift 3s ease-in-out infinite;
