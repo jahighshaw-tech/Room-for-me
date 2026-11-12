@@ -3,101 +3,57 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Blog - Bar Website Template</title>
+	<title>Home - Bar Website Template</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="video-controls.js" defer></script>
 </head>
 <body>
-	<div class="header">
-		<div>
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="events.html">Events</a>
-				</li>
-				<li>
-					<a href="games.html">Games</a>
-				</li>
-				<li>
-					<a href="menu.html">Menu</a>
-				</li>
-				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li class="selected">
-					<a href="blog.html">Blog</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+<div class="cat">
+  <div class="cat-main">
+      <div class="info"></div>
+      <a href="#" class="portfolio-link"><div class="petal portfolio"></div></a>
+      <a href="#" class="contact-link"><div class="petal contact"></div></a>
+      <a href="#" class="socialmedia-link"><div class="petal socialmedia"></div></a>
+      <a href="#" class="inspiration-link"><div class="petal inspiration"></div></a>
+      <a href="#" class="mystery-link"><div class="petal mystery"></div></a>
+  </div>
+
+</div>
+
+
 	<div class="body">
 		<div>
-			<div class="blog">
+	
 				<div>
-					<h4>This is just a place holder</h4>
-					<p>
-						This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
-					</p>
-					<p>
+					<h4 class="centerdis">This is just a place holder</h4>
+					<p class="centerdis" >
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sem id sem laoreet pharetra eget hendrerit quam. Duis gravida elit nec nibh pellentesque ut tempus libero iaculis. Aenean tincidunt euismod porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pharetra urna sed quam rhoncus iaculis. Etiam mauris lacus, vehicula vitae bibendum at, elementum in metus. Suspendisse feugiat justo et felis pulvinar fermentum scelerisque mauris pellentesque. Aenean lacinia tortor ipsum. Donec vel eros ut turpis mattis vestibulum. Duis id nibh quis ligula convallis euismod ut sed lacus. Quisque convallis tortor vitae orci rhoncus mollis. Proin eu velit ut lorem vehicula mattis. In hac habitasse platea dictumst. Suspendisse potenti. Integer vel nunc id nisi molestie rutrum. Quisque porta lacus a ipsum dictum tristique.
 					</p>
-					<p>
+					<p class="centerdis">
 						Nulla eget nibh euismod quam pretium condimentum rutrum at ligula. Proin vestibulum sodales dictum. Suspendisse cursus ligula sagittis turpis imperdiet eu varius tellus pellentesque. Aenean nec lectus odio. Curabitur rhoncus, nulla ac commodo consequat, leo mauris ultricies turpis, sit amet vulputate nunc justo non massa. Morbi sed leo ipsum. Nam congue tempor nibh at cursus. Curabitur nec augue turpis.
 					</p>
 				</div>
 				<div>
-					<div>
-						<h3>Recent Post</h3>
-						<ul>
-							<li>
-								<a href="#">This is just a place holder</a>
-							</li>
-							<li>
-								<a href="#">This is just a place holder</a>
-							</li>
-							<li>
-								<a href="#">This is just a place holder</a>
-							</li>
-							<li>
-								<a href="#">This is just a place holder</a>
-							</li>
-							<li>
-								<a href="#">This is just a place holder</a>
-							</li>
-						</ul>
-					</div>
-					<div>
-						<h3>Archive</h3>
-						<ul>
-							<li>
-								<a href="#">This is just a place holder</a>
-							</li>
-							<li>
-								<a href="#">This is just a place holder</a>
-							</li>
-							<li>
-								<a href="#">This is just a place holder</a>
-							</li>
-							<li>
-								<a href="#">This is just a place holder</a>
-							</li>
-							<li>
-								<a href="#">This is just a place holder</a>
-							</li>
-						</ul>
-					</div>
 				</div>
+		</div>
+	</div>
+	<section class="video-section" aria-labelledby="video-heading">
+		
+		<div class="video-player" data-video-player>
+			<video class="video-player__media" playsinline preload="metadata" aria-label="Featured video">
+				<source src="video.mp4" type="video/mp4">
+				
+			</video>
+			<div class="video-controls" role="group" aria-label="Video controls">
+				<button class="video-play-button" type="button" aria-label="Play video" disabled>Play</button>
+				<label class="visually-hidden" for="video-seek">Seek through video</label>
+				<input class="video-seek" id="video-seek" type="range" min="0" max="0" step="0.1" value="0" aria-valuetext="0:00 of 0:00" disabled>
+				<time class="video-current-time">0:00</time>
+				<span aria-hidden="true">/</span>
+				<time class="video-duration">0:00</time>
 			</div>
+			<p class="video-status" role="status" aria-live="polite"></p>
 		</div>
-	</div>
-	<div class="footer">
-		<div class="connect">
-			<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a> <a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a> <a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">google+</a>
-		</div>
-		<p>
-			&#169; Copyright 2012. All rights reserved.
-		</p>
-	</div>
+	</section>
 </body>
 </html>
