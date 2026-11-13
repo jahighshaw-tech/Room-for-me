@@ -116,7 +116,7 @@ a {
 
 .video-section {
   width: min(92vw, 1200px);
-  margin: 1rem auto 3rem;
+  margin: 7rem auto 7rem;
   text-align: center;
 }
 
@@ -253,6 +253,7 @@ a {
   width: 200px;
   height: 200px;
   margin: 100px auto 0 auto;
+  padding: 50px;
 }
 
 .cat-main {
